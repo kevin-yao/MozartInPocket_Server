@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <display-name>MozartInPocket</display-name>
+  <servlet>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>mozartinpocket.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/Login</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>SaveUserProfile</servlet-name>
+    <servlet-class>mozartinpocket.servlet.SaveUserProfileServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SaveUserProfile</servlet-name>
+    <url-pattern>/SaveUserProfile</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>RecieveMusic</servlet-name>
+    <servlet-class>mozartinpocket.servlet.RecieveMusicServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RecieveMusic</servlet-name>
+    <url-pattern> /RecieveMusic</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ResponsePost</servlet-name>
+    <servlet-class>mozartinpocket.servlet.ResponsePostServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ResponsePost</servlet-name>
+    <url-pattern> /ResponsePost</url-pattern>
+  </servlet-mapping>
+    <servlet>
+    <servlet-name>RecievePost</servlet-name>
+    <servlet-class>mozartinpocket.servlet.RecievePostServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RecievePost</servlet-name>
+    <url-pattern> /RecievePost</url-pattern>
+  </servlet-mapping>
+</web-app>
